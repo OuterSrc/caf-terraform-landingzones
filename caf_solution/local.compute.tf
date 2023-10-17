@@ -26,6 +26,7 @@ locals {
       wvd_application_groups              = var.wvd_application_groups
       wvd_applications                    = var.wvd_applications
       wvd_host_pools                      = var.wvd_host_pools
+      wvd_scaling_plans                   = var.wvd_scaling_plans
       wvd_workspaces                      = var.wvd_workspaces
     }
   )
