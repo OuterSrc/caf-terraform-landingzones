@@ -127,6 +127,9 @@ variable "public_ip_addresses" {
 variable "route_servers" {
   default = {}
 }
+variable "route_servers_bgp_connections" {
+  default = {}
+}
 variable "route_tables" {
   default = {}
 }

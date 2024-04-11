@@ -60,6 +60,7 @@ locals {
       relay_hybrid_connection                            = var.relay_hybrid_connection
       relay_namespace                                    = var.relay_namespace
       route_servers                                      = var.route_servers
+      route_servers_bgp_connections                      = var.route_servers_bgp_connections
       route_tables                                       = var.route_tables
       traffic_manager_azure_endpoint                     = var.traffic_manager_azure_endpoint
       traffic_manager_external_endpoint                  = var.traffic_manager_external_endpoint
