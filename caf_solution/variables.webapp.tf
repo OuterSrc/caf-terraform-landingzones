@@ -36,3 +36,6 @@ variable "function_apps" {
 variable "static_sites" {
   default = {}
 }
+variable "windows_function_apps" {
+  default = {}
+}
