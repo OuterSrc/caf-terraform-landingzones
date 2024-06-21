@@ -2,7 +2,7 @@ module "solution" {
   # source  = "aztfmod/caf/azurerm"
   # version = "5.7.10"
   # source = "git::https://github.com/aztfmod/terraform-azurerm-caf.git?ref=main"
-  source = "git::https://github.com/OuterSrc/terraform-azurerm-caf.git?ref=60-add-vgw-setting"
+  source = "git::https://github.com/OuterSrc/terraform-azurerm-caf.git?ref=v1.4.1"
 
   providers = {
     azurerm.vhub = azurerm.vhub
