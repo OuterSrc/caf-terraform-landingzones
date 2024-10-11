@@ -11,6 +11,7 @@ locals {
       azurerm_application_insights_standard_web_test = var.azurerm_application_insights_standard_web_test
       function_apps                                  = var.function_apps
       static_sites                                   = var.static_sites
+      windows_function_apps                          = var.windows_function_apps
     }
   )
 }
