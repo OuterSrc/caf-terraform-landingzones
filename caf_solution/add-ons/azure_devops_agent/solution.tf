@@ -1,7 +1,7 @@
 module "caf" {
   # source  = "aztfmod/caf/azurerm"
   source = "github.com/OuterSrc/terraform-azurerm-caf.git?ref=dfh-vend"
-  version = "~>5.6.8"
+  # version = "~>5.6.8"
 
   providers = {
     azurerm.vhub = azurerm.vhub
