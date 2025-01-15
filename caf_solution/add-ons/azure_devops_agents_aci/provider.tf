@@ -4,11 +4,11 @@ terraform {
     // azurerm version driven by the caf module and should not be specified here
     azuread = {
       source  = "hashicorp/azuread"
-      version = "~> 1.4.0"
+      version = "~> 3.0.2"
     }
     random = {
       source  = "hashicorp/random"
-      version = "~> 3.3.1"
+      version = "~> 3.6.3"
     }
     external = {
       source  = "hashicorp/external"
