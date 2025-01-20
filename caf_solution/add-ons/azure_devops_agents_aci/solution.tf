@@ -24,11 +24,6 @@ module "solution" {
     container_groups = var.container_groups
   }
 
-  networking = {
-    network_profiles = var.network_profiles
-  }
-
-  # Pass the remote objects you need to connect to.
   remote_objects = {
     keyvaults          = local.remote.keyvaults
     managed_identities = local.remote.managed_identities
