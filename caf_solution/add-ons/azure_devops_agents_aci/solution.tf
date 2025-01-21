@@ -1,6 +1,5 @@
 module "solution" {
-  source  = "aztfmod/caf/azurerm"
-  version = "~>5.6.8"
+  source = "github.com/OuterSrc/terraform-azurerm-caf.git?ref=v1.8.0"
 
   providers = {
     azurerm.vhub = azurerm
@@ -23,11 +22,6 @@ module "solution" {
     container_groups = var.container_groups
   }
 
-  networking = {
-    network_profiles = var.network_profiles
-  }
-
-  # Pass the remote objects you need to connect to.
   remote_objects = {
     keyvaults          = local.remote.keyvaults
     managed_identities = local.remote.managed_identities

@@ -8,25 +8,27 @@ module "caf" {
 
   azuread                     = local.azuread
   current_landingzone_key     = var.landingzone.key
+  custom_role_definitions     = var.custom_role_definitions
+  diagnostic_storage_accounts = var.diagnostic_storage_accounts
+  diagnostics                 = local.diagnostics
+  global_settings             = local.global_settings
+  keyvault_access_policies    = var.keyvault_access_policies
+  keyvaults                   = var.keyvaults
+  logged_aad_app_objectId     = var.logged_aad_app_objectId
+  logged_user_objectId        = var.logged_user_objectId
+  managed_identities          = var.managed_identities
+  resource_groups             = var.resource_groups
+  role_mapping                = var.role_mapping
+  storage_accounts            = var.storage_accounts
+  tags                        = local.tags
   tenant_id                   = var.tenant_id
   tfstates                    = local.tfstates
-  tags                        = local.tags
-  global_settings             = local.global_settings
-  diagnostics                 = local.diagnostics
-  diagnostic_storage_accounts = var.diagnostic_storage_accounts
-  logged_user_objectId        = var.logged_user_objectId
-  logged_aad_app_objectId     = var.logged_aad_app_objectId
-  resource_groups             = var.resource_groups
-  storage_accounts            = var.storage_accounts
-  keyvaults                   = var.keyvaults
-  keyvault_access_policies    = var.keyvault_access_policies
-  managed_identities          = var.managed_identities
-  role_mapping                = var.role_mapping
-  custom_role_definitions     = var.custom_role_definitions
   var_folder_path             = var.var_folder_path
+
   compute = {
     virtual_machines = var.virtual_machines
   }
+
   storage = {
     storage_account_blobs = var.storage_account_blobs
     storage_containers    = var.storage_containers
