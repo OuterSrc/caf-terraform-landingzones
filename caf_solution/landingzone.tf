@@ -1,5 +1,6 @@
 module "solution" {
-  source = "git::https://github.com/OuterSrc/terraform-azurerm-caf.git?ref=v1.8.4"
+  # source = "git::https://github.com/OuterSrc/terraform-azurerm-caf.git?ref=v1.8.4"
+  source = "git::https://github.com/OuterSrc/terraform-azurerm-caf.git?ref=security-remediation"
 
   providers = {
     azurerm.vhub = azurerm.vhub
